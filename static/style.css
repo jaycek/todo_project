@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 16px;
+    color: #2d3748;
+}
+
+.card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 520px;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    color: #4c51bf;
+    text-align: center;
+}
+
+.add-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.add-form input {
+    flex: 1;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.add-form input:focus {
+    border-color: #667eea;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.1s, opacity 0.2s;
+}
+
+.btn:hover { opacity: 0.85; }
+.btn:active { transform: scale(0.96); }
+
+.btn-primary {
+    background: #667eea;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+.btn-edit {
+    background: #edf2f7;
+    color: #4a5568;
+}
+
+.btn-delete {
+    background: #fed7d7;
+    color: #c53030;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    background: #f7fafc;
+    border-left: 4px solid #667eea;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.todo-item:hover {
+    background: #ebf4ff;
+}
+
+.task {
+    font-size: 1rem;
+    word-break: break-word;
+    margin-right: 12px;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.empty {
+    text-align: center;
+    color: #a0aec0;
+    padding: 20px 0;
+}
+
+.count {
+    text-align: right;
+    font-size: 0.85rem;
+    color: #a0aec0;
+    margin-top: 12px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
